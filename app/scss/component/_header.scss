@@ -1,0 +1,38 @@
+.header {
+    background-color: black;
+    color: #ffffff;
+    font-family: "Kelly Slab", cursive;
+    font-weight: 400;
+    line-height: normal;
+
+  
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      gap: 2rem 17rem;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      height: 100vh;
+      overflow: scroll;
+    }
+    &__left {
+      max-width: 12.5rem;
+      color: white;
+      overflow: hidden;
+    }
+  
+    &__title {
+      font-size: 2.25rem;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+  
+    &__link {
+      max-width: 17rem;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  
