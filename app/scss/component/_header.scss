@@ -1,38 +1,55 @@
-.header {
-    background-color: black;
-    color: #ffffff;
-    font-family: "Kelly Slab", cursive;
-    font-weight: 400;
-    line-height: normal;
 
-  
-    &__wrap {
-      display: flex;
-      justify-content: center;
-      gap: 2rem 17rem;
-      align-items: center;
-      flex-wrap: wrap;
-      text-align: center;
-      height: 100vh;
-      overflow: scroll;
-    }
-    &__left {
-      max-width: 12.5rem;
-      color: white;
-      overflow: hidden;
-    }
-  
-    &__title {
-      font-size: 2.25rem;
-    }
-    &__text {
-      font-size: 2rem;
-    }
-  
-    &__link {
-      max-width: 17rem;
-      width: 100%;
-      object-fit: contain;
+.header {
+  background-color: $headerBackground;
+  color: $headerColor;
+
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    @include addaptive-value(column-gap, 200, 150, 1);
+    row-gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100vh;
+    overflow: scroll;
+    margin-top: 15px;
+    position: relative;
+
+  }
+  &__left {
+    max-width: 12.5rem;
+    color: white;
+    overflow: hidden;
+  }
+
+  &__title {
+    @extend %header__font;
+  }
+
+  &__text {
+    @extend %header__text;
+  }
+
+
+  &__img {
+    @include addaptive-value(max-width, 256, 180, 1);
+    width: 100%;
+    object-fit: contain;
+  }
+  &__button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    padding: 0;
+    transition: all ease-in-out 1s;
+    @include addaptive-value(width, 50, 35, 1);
+    &:active{
+        transform: scale(-80%)
     }
   }
-  
+}
+

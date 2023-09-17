@@ -4,9 +4,11 @@
 @import "./component/libs";
 @import "./component/global";
 @import "./component/header";
-@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+@import "./component/mixin";
 
- 
-body {
-  background-color: sandybrown ;
-}
+ body {
+    background-color: #BCBCBC;
+    @extend %default__font
+
+ }
+
