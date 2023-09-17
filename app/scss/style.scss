@@ -7,8 +7,16 @@
 @import "./component/mixin";
 
  body {
-    background-color: #BCBCBC;
+    background-color: $bodyBackgtoundColor;
     @extend %default__font
 
  }
 
+
+.active {
+   opacity: 1;
+   visibility: visible;
+   transform: translateX(0);
+
+
+}

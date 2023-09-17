@@ -39,17 +39,74 @@
     object-fit: contain;
   }
   &__button {
-    background: transparent;
-    border: none;
-    position: absolute;
-    right: 0;
-    top: 30px;
+    @include addaptive-value(width, 40, 35, 1);
+    position: fixed;
+    right: 45px;
+    top: 45px;
     padding: 0;
     transition: all ease-in-out 1s;
-    @include addaptive-value(width, 50, 35, 1);
     &:active{
         transform: scale(-80%)
     }
   }
+
+  
+  &__rigth-button {
+    position: absolute;
+    right: 45px;
+    top: 45px;
+ svg {
+       width: 50px;
+       height: 50px;
+       fill: white;
+       transition: all ease-in-out .6s;
+       &:active{
+          transform: scale(-70%)
+      }
+    }
+ }
+ 
+ &__right{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    right: 0;
+    top: 0;
+    @include addaptive-value(width, 490, 320, 1);
+    height: 90vh;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all ease .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
+    -moz-box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
+    box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
+ }
+ &__menu {
+    text-align: center;
+    width: 100%;
+ }
+
+ &__menu-item {
+    margin-bottom: 40px;
+    padding-bottom: 17px;
+    position: relative;
+    a{
+       padding: 20px 60px;
+    }
+    &::after {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       width: 60%;
+       margin: 0 auto;
+       height: 1px;
+       background: #ffffff;
+    }
+ }
 }
 
