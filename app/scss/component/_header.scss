@@ -1,8 +1,6 @@
-
 .header {
-  background-color: $headerBackground;
+  background-color: $defultBackground;
   color: $headerColor;
-
 
   &__wrap {
     display: flex;
@@ -14,13 +12,11 @@
     text-align: center;
     height: 100vh;
     overflow: scroll;
-    margin-top: 15px;
+    margin-top: 1rem;
     position: relative;
-
   }
   &__left {
     max-width: 12.5rem;
-    color: white;
     overflow: hidden;
   }
 
@@ -32,7 +28,6 @@
     @extend %header__text;
   }
 
-
   &__img {
     @include addaptive-value(max-width, 256, 180, 1);
     width: 100%;
@@ -41,72 +36,83 @@
   &__button {
     @include addaptive-value(width, 40, 35, 1);
     position: fixed;
-    right: 45px;
-    top: 45px;
+    @include addaptive-value(right, 40, 20, 1);
+    @include addaptive-value(top, 40, 30, 1);
     padding: 0;
     transition: all ease-in-out 1s;
-    &:active{
-        transform: scale(-80%)
+    &:active {
+      transform: scale(-80%);
     }
   }
 
-  
   &__rigth-button {
-    position: absolute;
-    right: 45px;
-    top: 45px;
- svg {
-       width: 50px;
-       height: 50px;
-       fill: white;
-       transition: all ease-in-out .6s;
-       &:active{
-          transform: scale(-70%)
+    z-index: 10;
+    position: sticky;
+    left: 80%;
+    @include addaptive-value(right, 40, 20, 1);
+    @include addaptive-value(top, 40, 30, 1);
+    svg {
+      width: 50px;
+      height: 50px;
+      fill: white;
+      transition: all ease-in-out 0.6s;
+      &:active {
+        transform: scale(-70%);
       }
     }
- }
- 
- &__right{
+  }
+
+  &__right {
     position: fixed;
     background-color: rgb(0, 0, 0);
+    @include addaptive-value(width, 490, 300, 1);
+    height: 80vh;
+    overflow-y: scroll;
     right: 0;
     top: 0;
-    @include addaptive-value(width, 490, 320, 1);
-    height: 90vh;
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);
-    transition: all ease .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: all ease 0.5s;
     -webkit-box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
     -moz-box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
     box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
- }
- &__menu {
+  }
+  &__right-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
     text-align: center;
-    width: 100%;
- }
+  }
 
- &__menu-item {
-    margin-bottom: 40px;
-    padding-bottom: 17px;
+  &__menu {
+    width: 100%;
+  }
+
+  &__menu-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
     position: relative;
-    a{
-       padding: 20px 60px;
+    a {
+      padding: 1.25rem 3.75rem;
     }
     &::after {
-       content: '';
-       position: absolute;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       width: 60%;
-       margin: 0 auto;
-       height: 1px;
-       background: #ffffff;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 60%;
+      margin: 0 auto;
+      height: 1px;
+      background: #ffffff;
     }
- }
+  }
 }
 
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
