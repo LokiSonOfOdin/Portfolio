@@ -1,7 +1,7 @@
 @import './mixin';
 
 $defultBackground: #000;
-$headerColor: #ffffff;
+$defultColorText: #ffffff;
 $bodyBackgtoundColor:  #BCBCBC;
 
 %header__font {
@@ -10,7 +10,7 @@ $bodyBackgtoundColor:  #BCBCBC;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
-    color: white;
+    color: $defultColorText;
 }
 %header__text {
     font-family: "Kelly Slab", cursive;
@@ -18,12 +18,12 @@ $bodyBackgtoundColor:  #BCBCBC;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
-    color: white;
+    color: $defultColorText;
 }
 
 %title__font {
     font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 32, 24, 1);
+    @include addaptive-value(font-size, 32, 22, 1);
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
@@ -31,38 +31,38 @@ $bodyBackgtoundColor:  #BCBCBC;
 
 %default__font {
     font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 24, 20, 1);
+    @include addaptive-value(font-size, 24, 18, 1);
     font-style: italic;
     font-weight: 400;
-    line-height: 110%;
+    line-height: 120%;
     color:#000
 }
 
 %footer__title {
     font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 22, 18, 1);
+    @include addaptive-value(font-size, 22, 16, 1);
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
-    color: white;
+    color: $defultColorText;
 }
 
 
 %footer__font {
     font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 20, 16, 1);
+    @include addaptive-value(font-size, 20, 14, 1);
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
-    color: white;
+    color: $defultColorText;
 }
 
 
 %footer__copyright {
     font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 18, 14, 1);
+    @include addaptive-value(font-size, 18, 12, 1);
     font-style: italic;
     font-weight: 400;
     line-height: 130%;
-    color: white;
+    color: $defultColorText;
 }
