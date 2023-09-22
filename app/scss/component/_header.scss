@@ -18,7 +18,7 @@
   &__left {
     max-width: 12.5rem;
     overflow: hidden;
-    margin-left: 1.5rem
+    margin-left: 1.5rem;
   }
 
   &__title {
@@ -33,6 +33,8 @@
     @include addaptive-value(max-width, 256, 180, 1);
     width: 100%;
     object-fit: contain;
+    margin-left: 1.5rem;
+
   }
   &__button {
     @include addaptive-value(width, 40, 35, 1);
@@ -40,14 +42,15 @@
     @include addaptive-value(right, 40, 20, 1);
     @include addaptive-value(top, 40, 30, 1);
     padding: 0;
-    transition: all ease-in-out 1s;
+    transition: all ease-in-out 0.4s;
+    z-index: 3;
     &:active {
       transform: scale(-80%);
     }
   }
 
   &__rigth-button {
-    z-index: 10;
+    z-index: 5;
     position: sticky;
     left: 80%;
     @include addaptive-value(right, 40, 20, 1);
@@ -56,7 +59,7 @@
       width: 50px;
       height: 50px;
       fill: white;
-      transition: all ease-in-out 0.6s;
+      transition: all ease-in-out 0.4s;
       &:active {
         transform: scale(-70%);
       }
@@ -64,11 +67,12 @@
   }
 
   &__right {
+    z-index: 4;
     position: fixed;
     background-color: rgb(0, 0, 0);
     @include addaptive-value(width, 490, 300, 1);
     overflow-y: scroll;
-    max-height: 30rem;
+    max-height: 40rem;
     height: 100%;
     right: 0;
     top: 0;
@@ -79,15 +83,12 @@
     -webkit-box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
     -moz-box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
     box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
-    
   }
   &__right-wrap {
-    margin:  2rem 0;
     text-align: center;
     display: flex;
     align-items: center;
     height: 100%;
-
   }
 
   &__menu {

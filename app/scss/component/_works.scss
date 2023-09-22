@@ -1,8 +1,8 @@
 .works {
+    @extend %default__font;
     &__inner {
         display: flex;
         flex-direction: column;
-
     }
 
     &__title {
@@ -19,8 +19,8 @@
         margin-bottom: 2rem;
         padding-bottom: 1rem;
         position: relative;
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
@@ -31,9 +31,8 @@
             background-color: $defultBackground;
         }
         @media (max-width: 636px) {
-            text-align: center;            
+            text-align: center;
         }
-        
     }
     .revers {
         flex-direction: row-reverse;
@@ -45,13 +44,11 @@
         justify-content: center;
         align-items: center;
         flex: 1 1 33%;
-
     }
 
     &__text {
         margin-bottom: 1rem;
         min-width: 18.75rem;
-        
     }
 
     &__img {

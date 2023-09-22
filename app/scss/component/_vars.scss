@@ -23,7 +23,7 @@ $bodyBackgtoundColor: #bcbcbc;
 
 %title__font {
   font-family: "PT Serif", serif;
-  @include addaptive-value(font-size, 32, 22, 1);
+  @include addaptive-value(font-size, 32, 26, 1);
   font-style: normal;
   font-weight: 700;
   line-height: 130%;

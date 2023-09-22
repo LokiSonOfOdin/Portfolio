@@ -3,11 +3,12 @@
 @import "./component/reset";
 @import "./component/libs";
 @import "./component/global";
-@import "./component/header";
 @import "./component/mixin";
+@import "./component/header";
 @import "./component/footer";
 @import "./component/about";
 @import "./component/works";
+@import "./component/technologies";
 
 body {
   background-color: $bodyBackgtoundColor;
@@ -19,8 +20,8 @@ body {
 
 section {
   position: relative;
-  &::before {
-    content: '';
+  &:not(:last-child)::before {
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
