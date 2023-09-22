@@ -34,7 +34,6 @@
     width: 100%;
     object-fit: contain;
     margin-left: 1.5rem;
-
   }
   &__button {
     @include addaptive-value(width, 40, 35, 1);

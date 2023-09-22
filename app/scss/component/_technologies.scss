@@ -19,6 +19,6 @@
 
     &__img {
         @include addaptive-value(width, 100, 60, 1);
-        margin: .5rem;
+        margin: 0.5rem;
     }
 }
