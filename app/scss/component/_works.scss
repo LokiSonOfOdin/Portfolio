@@ -1,0 +1,62 @@
+.works {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+        @extend %title__font;
+    }
+    &__card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            width: 80%;
+            height: 1px;
+            background-color: $defultBackground;
+        }
+        @media (max-width: 636px) {
+            text-align: center;            
+        }
+        
+    }
+    .revers {
+        flex-direction: row-reverse;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 33%;
+
+    }
+
+    &__text {
+        margin-bottom: 1rem;
+        min-width: 18.75rem;
+        
+    }
+
+    &__img {
+        margin: 1rem;
+        @include addaptive-value(width, 400, 200, 1);
+        object-fit: cover;
+    }
+}

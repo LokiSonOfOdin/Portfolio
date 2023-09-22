@@ -1,10 +1,10 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
 
@@ -52,13 +52,13 @@ select {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
 }
 
-::-webkit-scrollbar { 
+::-webkit-scrollbar {
   display: block;
   width: 0;
 }

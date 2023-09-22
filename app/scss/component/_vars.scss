@@ -1,68 +1,66 @@
-@import './mixin';
+@import "./mixin";
 
 $defultBackground: #000;
 $defultColorText: #ffffff;
-$bodyBackgtoundColor:  #BCBCBC;
+$bodyBackgtoundColor: #bcbcbc;
 
 %header__font {
-    font-family: "Kelly Slab", cursive;
-    @include addaptive-value(font-size, 36, 24, 1);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    color: $defultColorText;
+  font-family: "Kelly Slab", cursive;
+  @include addaptive-value(font-size, 36, 24, 1);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  color: $defultColorText;
 }
 %header__text {
-    font-family: "Kelly Slab", cursive;
-    @include addaptive-value(font-size, 32, 20, 1);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    color: $defultColorText;
+  font-family: "Kelly Slab", cursive;
+  @include addaptive-value(font-size, 32, 20, 1);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: $defultColorText;
 }
 
 %title__font {
-    font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 32, 22, 1);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
+  font-family: "PT Serif", serif;
+  @include addaptive-value(font-size, 32, 22, 1);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
 }
 
 %default__font {
-    font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 24, 18, 1);
-    font-style: italic;
-    font-weight: 400;
-    line-height: 120%;
-    color:#000
+  font-family: "PT Serif", serif;
+  @include addaptive-value(font-size, 24, 18, 1);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  color: #000;
 }
 
 %footer__title {
-    font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 22, 16, 1);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-    color: $defultColorText;
+  font-family: "PT Serif", serif;
+  @include addaptive-value(font-size, 22, 16, 1);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: $defultColorText;
 }
-
 
 %footer__font {
-    font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 20, 14, 1);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    color: $defultColorText;
+  font-family: "PT Serif", serif;
+  @include addaptive-value(font-size, 20, 14, 1);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: $defultColorText;
 }
 
-
 %footer__copyright {
-    font-family: 'PT Serif', serif;
-    @include addaptive-value(font-size, 18, 12, 1);
-    font-style: italic;
-    font-weight: 400;
-    line-height: 130%;
-    color: $defultColorText;
+  font-family: "PT Serif", serif;
+  @include addaptive-value(font-size, 18, 12, 1);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  color: $defultColorText;
 }
