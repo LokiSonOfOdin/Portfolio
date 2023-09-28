@@ -1,5 +1,7 @@
 .footer {
   @extend %footer__font;
+  color: $defultColorText;
+
 
   &__social {
     background-color: rgba(0, 0, 0, 0.7);

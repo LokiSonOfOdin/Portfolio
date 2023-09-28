@@ -2,6 +2,8 @@
 
 $defultBackground: #000;
 $defultColorText: #ffffff;
+$contentColorText: #000000;
+
 $bodyBackgtoundColor: #bcbcbc;
 
 %header__font {
@@ -10,7 +12,6 @@ $bodyBackgtoundColor: #bcbcbc;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
-  color: $defultColorText;
 }
 %header__text {
   font-family: "Kelly Slab", cursive;
@@ -18,7 +19,6 @@ $bodyBackgtoundColor: #bcbcbc;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  color: $defultColorText;
 }
 
 %title__font {
@@ -35,7 +35,6 @@ $bodyBackgtoundColor: #bcbcbc;
   font-style: italic;
   font-weight: 400;
   line-height: 120%;
-  color: #000;
 }
 
 %footer__title {
@@ -44,7 +43,6 @@ $bodyBackgtoundColor: #bcbcbc;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: $defultColorText;
 }
 
 %footer__font {
@@ -53,7 +51,6 @@ $bodyBackgtoundColor: #bcbcbc;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  color: $defultColorText;
 }
 
 %footer__copyright {
@@ -62,5 +59,4 @@ $bodyBackgtoundColor: #bcbcbc;
   font-style: italic;
   font-weight: 400;
   line-height: 130%;
-  color: $defultColorText;
 }

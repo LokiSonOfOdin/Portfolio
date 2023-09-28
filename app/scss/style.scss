@@ -12,12 +12,15 @@
 
 body {
   background-color: $bodyBackgtoundColor;
+  color: $contentColorText;
   @extend %default__font;
   a {
     color: white;
   }
 }
-
+.section__title {
+  @extend %title__font;
+}
 section {
   position: relative;
   &:not(:last-child)::before {

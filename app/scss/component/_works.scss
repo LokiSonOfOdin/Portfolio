@@ -1,5 +1,4 @@
 .works {
-    @extend %default__font;
     &__inner {
         display: flex;
         flex-direction: column;
@@ -8,7 +7,6 @@
     &__title {
         text-align: center;
         margin-bottom: 1rem;
-        @extend %title__font;
     }
     &__card {
         display: flex;
