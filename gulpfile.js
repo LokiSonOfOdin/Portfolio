@@ -37,7 +37,7 @@ function scripts() {
 }
 
 function cleanDist() {
-  return src("dist").pipe(clean());
+  return src("docs").pipe(clean());
 }
 
 function images() {
