@@ -12,7 +12,6 @@
     text-align: center;
     height: 100vh;
     overflow: scroll;
-    margin-top: 1rem;
     position: relative;
   }
   &__left {
@@ -50,8 +49,7 @@
 
   &__rigth-button {
     z-index: 5;
-    position: sticky;
-    left: 80%;
+    position: absolute;
     @include addaptive-value(right, 40, 20, 1);
     @include addaptive-value(top, 40, 30, 1);
     svg {
@@ -67,12 +65,15 @@
 
   &__right {
     z-index: 4;
+    height: 80vh;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: rgb(0, 0, 0);
     @include addaptive-value(width, 490, 300, 1);
-    overflow-y: scroll;
-    max-height: 40rem;
-    height: 100%;
     right: 0;
     top: 0;
     opacity: 0;
@@ -83,21 +84,22 @@
     -moz-box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
     box-shadow: -8px 8px 29px 6px rgba(255, 255, 255, 0.38);
   }
-  &__right-wrap {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
 
   &__menu {
+    align-items: center ;
+    text-align: center;
+    margin-top: 3rem;
     width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   &__menu-item {
     margin-bottom: 2.5rem;
     padding-bottom: 1rem;
     position: relative;
+    width: 100%;
+
     a {
       padding: 1.25rem 3.75rem;
     }
