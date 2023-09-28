@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/main.min.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrap" id="header">
+            <div class="header__left">
+              <h1 class="header__title">Меня зовут <br />Рустем</h1>
+              <br /> <br>
+              <p class="header__text">Это мой сайт <br />портфолио</p>
+            </div>
+            <a class="header__link" href="#">
+              <img class="header__img" src="../images/Header__logo.png" alt="logo" />
+            </a>
+            <button class="header__button" type="submit"><img src="../images/Burger.png" alt=""></button>
+      
+          </div>
+      
+        </div>
+        <div class="header__right">
+          <button class="header__rigth-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <a href="#header">Главная</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#about">Обо мне</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#works">Работы</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#technologies">Технологии</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#footer">Контакты</a>
+                </li>
+              </ul>
+      
+      
+      </div>
+      </header>
+      
+
+      <main class="main">
+        <section class="about" id="about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__content">
+                <h2 class="about__title section__title">Обо мне</h2>
+                <p class="about__text">
+                  Меня зовут Рустем, занимаюсь программированием с 2022 года. За всё это
+                  время успел пройти несколько курсов, получилось даже пройти бесплатный
+                  курс от государства. Больше всего интересно было проходить курс от
+                  проекта “Strada”. Было несколько проектов как от знакомых знакомых,
+                  так и от фриланс площадок (о проектах ниже).
+                </p>
+              </div>
+                <img class="about__img" src="../images/about.png" alt="this is me" />
+            </div>
+          </div>
+        </section>
+        
+        <section class="works" id="works">
+          <div class="container">
+            <div class="works__inner">
+              <h2 class="works__title section__title">Мои проекты</h2>
+              <div class="works__card">
+                <img class="works__img" src="../images/site-1.avif" alt="img" />
+                <div class="works__info">
+                  <p class="works__text">
+                    Это один из моих первых написанных сайтов, конкретно этот сайт писал
+                    для жены. Тут я использовал swiper через npm. 
+                  </p>
+                  <a class="works__link" href="#">Ссылка</a>
+                </div>
+              </div>
+              <div class="works__card revers">
+                <img class="works__img" src="../images/site-2.avif" alt="img" />
+                <div class="works__info">
+                  <p class="works__text">
+                    Этот сайт писал по знакомству, заказчик просил строго по дизайну...
+                    Из инетересного использовал axios и телеграмм бота для приёма заявок.
+                  </p>
+                  <a class="works__link" href="#">Ссылка</a>
+                </div>
+              </div>
+              <div class="works__card">
+                <img class="works__img" src="../images/worksImg.png" alt="img" />
+                <div class="works__info">
+                  <p class="works__text">Этот сайт от заказчика с фриланс площадки.</p>
+                  <a class="works__link" href="#">Ссылка</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="technologies" id="technologies">
+            <div class="container">
+                <div class="technologies__inner">
+                    <h2 class="technologies__title section__title">Технологии которыми я пользуюсь</h2>
+                    <div class="technologies__content">
+                        <img class="technologies__img" src="../images/html.png" alt="img" >
+                        <img class="technologies__img" src="../images/css.png" alt="img" >
+                        <img class="technologies__img" src="../images/sass.png" alt="img" >
+                        <img class="technologies__img" src="../images/figma.png" alt="img" >
+                        <img class="technologies__img" src="../images/visualstudio.png" alt="img" >
+                        <img class="technologies__img" src="../images/javascript.png" alt="img" >
+                        <img class="technologies__img" src="../images/github.png" alt="img" >
+                        <img class="technologies__img" src="../images/google.png" alt="img" >
+                        <img class="technologies__img" src="../images/npm.png" alt="img" >
+                        <img class="technologies__img" src="../images/opera.png" alt="img" >
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="footer">
+
+              <div class="footer__social">
+
+                  <div class="container">
+
+                      <div class="footer__social-wrap">
+
+                          <h4 class="footer__title">По всем вопросам можно написать в удобный для вас <br> мессенджер или позвонить по телефону</h4>
+
+                          <ul class="footer__list">
+
+                              <li class="footer__list-item">
+
+                                  <a class="footer__list-link" href="tel:+79991345803">
+
+                                      <img src="../images/phone.png" alt="icon ">+79991345803</a></li>
+
+                              <li class="footer__list-item">
+
+                                  <a class="footer__list-link phoner" href="https://wa.me/79991345803">
+
+                                      <img src="../images/whatsapp.png" alt="icon ">Whatsapp</a></li>
+
+                              <li class="footer__list-item">
+
+                                  <a class="footer__list-link" href="#">
+
+                                      <img src="../images/telegram.png" alt="icon ">@Rusyfox</a></li>
+
+                          </ul>
+
+                      </div>
+
+      
+
+                  </div>
+
+                 
+
+              </div>
+
+      
+
+              <div class="footer__copyright">
+
+                  <div class="container">
+
+                      <p>Сделано с любовью</p>
+
+                  </div>
+
+              </div>
+
+          
+
+      </footer>
+    </div>
+  </body>
+</html>
