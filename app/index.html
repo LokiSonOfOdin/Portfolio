@@ -19,7 +19,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__wrap">
+          <div class="header__wrap" id="header">
             <div class="header__left">
               <h1 class="header__title">Меня зовут <br />Рустем</h1>
               <br /> <br>
@@ -37,19 +37,19 @@
           <button class="header__rigth-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
               <ul class="header__menu">
                 <li class="header__menu-item">
-                  <a href="#">Главная</a>
+                  <a href="#header">Главная</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#">Обо мне</a>
+                  <a href="#about">Обо мне</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#">Работы</a>
+                  <a href="#works">Работы</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#">Технологии</a>
+                  <a href="#technologies">Технологии</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#">Контакты</a>
+                  <a href="#footer">Контакты</a>
                 </li>
               </ul>
       
@@ -59,7 +59,7 @@
       
 
       <main class="main">
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <div class="about__inner">
               <div class="about__content">
@@ -77,30 +77,31 @@
           </div>
         </section>
         
-        <section class="works">
+        <section class="works" id="works">
           <div class="container">
             <div class="works__inner">
               <h2 class="works__title">Мои проекты</h2>
-              <div class="works__card revers">
-                <img class="works__img" src="../images/worksImg.png" alt="img" />
+              <div class="works__card">
+                <img class="works__img" src="../images/site-1.avif" alt="img" />
                 <div class="works__info">
                   <p class="works__text">
                     Это один из моих первых написанных сайтов, конкретно этот сайт писал
-                    для жены.
+                    для жены. Тут я использовал swiper через npm. 
+                  </p>
+                  <a class="works__link" href="#">Ссылка</a>
+                </div>
+              </div>
+              <div class="works__card revers">
+                <img class="works__img" src="../images/site-2.avif" alt="img" />
+                <div class="works__info">
+                  <p class="works__text">
+                    Этот сайт писал по знакомству, заказчик просил строго по дизайну...
+                    Из инетересного использовал axios и телеграмм бота для приёма заявок.
                   </p>
                   <a class="works__link" href="#">Ссылка</a>
                 </div>
               </div>
               <div class="works__card">
-                <img class="works__img" src="../images/worksImg.png" alt="img" />
-                <div class="works__info">
-                  <p class="works__text">
-                    Этот сайт писал по знакомству, заказчик просил строго по дизайну...
-                  </p>
-                  <a class="works__link" href="#">Ссылка</a>
-                </div>
-              </div>
-              <div class="works__card revers">
                 <img class="works__img" src="../images/worksImg.png" alt="img" />
                 <div class="works__info">
                   <p class="works__text">Этот сайт от заказчика с фриланс площадки.</p>
@@ -111,7 +112,7 @@
           </div>
         </section>
         
-        <section class="technologies">
+        <section class="technologies" id="technologies">
             <div class="container">
                 <div class="technologies__inner">
                     <h2 class="technologies__title">Технологии которыми я пользуюсь</h2>
@@ -132,7 +133,7 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer" id="footer">
 
               <div class="footer__social">
 
