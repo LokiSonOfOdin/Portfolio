@@ -49,6 +49,16 @@
         min-width: 18.75rem;
     }
 
+    &__link {
+        padding: 1rem 2rem;
+        background-color: $defultColorText;
+        color: $contentColorText;
+        border-radius: 1rem;
+        @media (max-width: 768px) {
+            padding: 1rem 1.5rem;            
+        }
+    }
+
     &__img {
         margin: 1rem;
         @include addaptive-value(width, 400, 200, 1);
