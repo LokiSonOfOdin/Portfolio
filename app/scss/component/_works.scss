@@ -63,5 +63,6 @@
         margin: 1rem;
         @include addaptive-value(width, 400, 200, 1);
         object-fit: cover;
+        border-radius: 20px;
     }
 }
