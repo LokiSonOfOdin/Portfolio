@@ -1,0 +1,95 @@
+/* Отдельная тема интернет-магазина с холодным циановым акцентом */
+.shop {
+  --shop-primary: #22d3ee;
+  --shop-primary-hover: #38e4ff;
+  --shop-primary-soft: rgba(34, 211, 238, 0.16);
+  --shop-primary-border: rgba(34, 211, 238, 0.4);
+  --shop-primary-contrast: #051418;
+
+  --shop-bg: #0f151a;
+  --shop-surface: #151d24;
+  --shop-surface-2: #1d262f;
+  --shop-surface-3: #26313b;
+  --shop-border: #2a3743;
+  --shop-border-strong: #3a4b59;
+
+  --shop-text: #f1f8fa;
+  --shop-text-soft: #c7d6dd;
+  --shop-muted: #8fa3af;
+
+  --shop-success: #22d3ee;
+  --shop-danger: #ff6b6b;
+
+  --shop-shadow: 0 20px 60px rgba(14, 165, 233, 0.12);
+
+  color: var(--shop-text);
+  background-color: var(--shop-bg);
+}
+
+.shop::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(900px 520px at 10% -10%, rgba(34, 211, 238, 0.14), transparent 70%),
+    radial-gradient(700px 460px at 90% 0%, rgba(56, 189, 248, 0.12), transparent 72%);
+}
+
+.shop .gradientText {
+  background: linear-gradient(100deg, var(--shop-primary) 0%, var(--shop-primary-hover) 60%, var(--shop-primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.shop .btnPrimary {
+  color: var(--shop-primary-contrast);
+  background: linear-gradient(135deg, var(--shop-primary) 0%, #38bdf8 100%);
+  border-color: transparent;
+  box-shadow: 0 10px 40px rgba(34, 211, 238, 0.18);
+}
+
+.shop .btnPrimary:hover:not(:disabled) {
+  filter: brightness(1.08);
+  box-shadow: 0 14px 50px rgba(56, 228, 255, 0.24);
+}
+
+.shop .btnGhost {
+  color: var(--shop-text);
+  border-color: var(--shop-border-strong);
+  background: transparent;
+}
+
+.shop .btnGhost:hover:not(:disabled) {
+  border-color: var(--shop-primary-border);
+  background: var(--shop-primary-soft);
+}
+
+.shop .chip {
+  border-color: var(--shop-border);
+  background: var(--shop-surface-2);
+  color: var(--shop-text-soft);
+}
+
+.shop input,
+.shop select,
+.shop textarea {
+  background: var(--shop-surface-2);
+  border: 1px solid var(--shop-border);
+  color: var(--shop-text);
+  border-radius: 12px;
+}
+
+.shop input:focus,
+.shop select:focus,
+.shop textarea:focus {
+  outline: none;
+  border-color: var(--shop-primary-border);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.12);
+}
+
+.shop a {
+  color: var(--shop-primary);
+}

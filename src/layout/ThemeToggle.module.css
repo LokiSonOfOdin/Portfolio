@@ -1,0 +1,43 @@
+.toggle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text-soft);
+  background: var(--surface);
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.toggle:hover {
+  color: var(--primary);
+  border-color: var(--primary-border);
+  background: var(--primary-soft);
+  transform: translateY(-1px);
+}
+
+.sunIcon,
+.moonIcon {
+  position: absolute;
+  transition: opacity 0.25s ease, transform 0.35s ease;
+}
+
+/* В тёмной теме показываем солнце (переключение на светлую), в светлой — луну. */
+.moonIcon {
+  opacity: 0;
+  transform: rotate(-70deg) scale(0.6);
+}
+
+:global([data-theme="light"]) .moonIcon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+:global([data-theme="light"]) .sunIcon {
+  opacity: 0;
+  transform: rotate(70deg) scale(0.6);
+}

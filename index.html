@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ганиев Рустем — фронтенд-разработчик и Node.js</title>
+    <meta
+      name="description"
+      content="Портфолио Ганиева Рустема: React и TypeScript, Node.js и REST API, проекты и контакты."
+    />
+    <meta name="author" content="Ганиев Рустем" />
+    <meta name="theme-color" content="#191920" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f4f3f8" media="(prefers-color-scheme: light)" />
+    <script>
+      // Применяем сохранённую тему до первой отрисовки, чтобы не было вспышки.
+      (function () {
+        try {
+          var stored = localStorage.getItem("portfolio-theme");
+          document.documentElement.dataset.theme =
+            stored === "light" ? "light" : "dark";
+        } catch (error) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

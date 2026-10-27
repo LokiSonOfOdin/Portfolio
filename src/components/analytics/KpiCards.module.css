@@ -1,0 +1,78 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.deltaUp {
+  color: var(--success);
+  background: rgba(110, 231, 183, 0.12);
+}
+
+.deltaDown {
+  color: #ff8f8f;
+  background: rgba(255, 114, 114, 0.14);
+}
+
+.value {
+  font-size: clamp(26px, 4vw, 38px);
+  letter-spacing: -1.2px;
+  font-weight: 700;
+}
+
+.spark {
+  position: relative;
+  height: 18px;
+  overflow: hidden;
+}
+
+.sparkLine {
+  position: absolute;
+  inset: 8px 0 0;
+  background: radial-gradient(120px 6px at 10% 50%, var(--primary-soft), transparent 70%);
+  filter: blur(4px);
+}
+
+@media (max-width: 1080px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

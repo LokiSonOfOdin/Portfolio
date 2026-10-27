@@ -1,0 +1,99 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 22px 10px;
+}
+
+.title {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.table thead th {
+  text-align: left;
+  padding: 10px 22px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.table tbody td {
+  padding: 12px 22px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.table tbody tr:hover {
+  background: var(--primary-soft);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.page {
+  font-weight: 600;
+}
+
+.rate {
+  font-weight: 600;
+}
+
+.trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.trendUp {
+  color: var(--success);
+  background: rgba(110, 231, 183, 0.12);
+}
+
+.trendDown {
+  color: #ff8f8f;
+  background: rgba(255, 114, 114, 0.14);
+}
+
+.trendStable {
+  color: var(--muted);
+  background: var(--surface-2);
+}

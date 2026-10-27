@@ -1,0 +1,27 @@
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  color: var(--shop-muted);
+  font-size: 14px;
+}
+
+.sort select {
+  padding: 10px 14px;
+  min-width: 220px;
+}
+
+@media (max-width: 640px) {
+  .sort {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sort select {
+    flex: 1;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,74 @@
+.header {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 18px;
+  padding: 7px 14px;
+  border: 1px solid var(--primary-border);
+  border-radius: 999px;
+  color: var(--primary);
+  background: var(--primary-soft);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.title {
+  font-size: clamp(30px, 4.4vw, 46px);
+  letter-spacing: -1.6px;
+}
+
+.lead {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+}
+
+.note {
+  display: flex;
+  gap: 16px;
+  margin-top: 34px;
+  padding: 24px 26px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.noteIcon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1px solid var(--primary-border);
+  border-radius: 13px;
+  color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.noteTitle {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.noteText {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .note {
+    flex-direction: column;
+  }
+}

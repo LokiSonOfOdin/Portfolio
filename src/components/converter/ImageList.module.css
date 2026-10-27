@@ -1,0 +1,38 @@
+.section {
+  margin-top: 34px;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.sectionHeading h2 {
+  font-size: 17px;
+}
+
+.imageCount {
+  display: grid;
+  place-items: center;
+  min-width: 25px;
+  height: 25px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 560px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+}

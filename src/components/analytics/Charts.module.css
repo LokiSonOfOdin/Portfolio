@@ -1,0 +1,111 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px 20px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  min-height: 320px;
+}
+
+.cardWide {
+  grid-column: span 8;
+}
+
+.cardCenter {
+  grid-column: 5 / span 4;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.legendBottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: -6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.dotMuted {
+  background: #22d3ee;
+}
+
+.chartWrap {
+  flex: 1;
+  min-height: 240px;
+}
+
+@media (max-width: 1180px) {
+  .cardWide {
+    grid-column: span 12;
+  }
+
+  .card {
+    grid-column: span 6;
+  }
+
+  .cardCenter {
+    grid-column: span 6;
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .card {
+    grid-column: span 12;
+  }
+
+  .cardCenter {
+    grid-column: span 12;
+    justify-self: stretch;
+  }
+}
