@@ -5,9 +5,12 @@ import App from "./App";
 import { ThemeProvider } from "./theme/ThemeProvider";
 import "./styles/global.css";
 
+// `BASE_URL` is `/` in dev and `/Portfolio/` on GitHub Pages (see vite.config.ts).
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ThemeProvider>
         <App />
       </ThemeProvider>

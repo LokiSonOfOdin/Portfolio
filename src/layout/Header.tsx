@@ -18,7 +18,12 @@ export default function Header() {
       <div className={`container ${styles.inner}`}>
         <Link to="/" className={styles.brand} aria-label="На главную">
           <span className={styles.brandMark}>
-            <img src="/logo.svg" alt="" width={40} height={40} />
+            <img
+              src={`${import.meta.env.BASE_URL}logo.svg`}
+              alt=""
+              width={40}
+              height={40}
+            />
           </span>
           <span className={styles.brandText}>
             Ганиев <span className={styles.brandAccent}>Рустем</span>
